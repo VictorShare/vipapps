@@ -78,7 +78,7 @@ class AdminController extends Controller{
 	}
 	//登录
 	public static function adminlogin($name,$password){
-		if($name == 'cadadmin' && $password == 'aec188cad'){
+		if($name == '' && $password == ''){
 			//session_start();
 			$_SESSION["S_CAD_ADMINAPP_NAME"]=$name;
 			$_SESSION["S_CAD_ADMINAPP_PWD"]=md5($password);
